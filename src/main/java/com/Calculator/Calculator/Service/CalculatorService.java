@@ -17,6 +17,9 @@ public class CalculatorService {
         return result;
     }
     public Integer divide(Integer input1, Integer input2){
+        if (input2 == 0){
+            throw new ArithmeticException();
+        }
         int result = input1 / input2;
         return result;
     }
